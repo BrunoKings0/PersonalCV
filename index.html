@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Vieira</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white">
+
+    <!--Menu-->
+    <nav class="z-20 bg-gray-100 dark:bg-slate-800 fixed md:static w-full md:w-auto border-b md:border-none shadow-lg md:shadow-none dark:border-none">
+        <div class="p-6 container mx-auto">
+            <div class="flex items-center justify-between">
+                <!--Logo-->
+                <div class="z-20">
+                    <a href="" class="flex items-center">
+                        <span class="text-3xl ml-3"> <span class="font-bold">Bruno</span> Vieira</span>
+                    </a>
+                </div>
+                <!--Corpo do Menu-->
+                <div>
+                    <!--botão responsive-->
+                    <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+
+                    <label for="hamburger" class="peer-checked:hamburger block z-20 cursor-pointer md:hidden transition p-5 hover:bg-gray-200 dark:hover:bg-slate-700 rounded">
+                        <div class="h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                        <div class="mt-2 h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                    </label>
+
+                    <!--Corpo dos enlaces-->
+                    <div class="bg-gray-100 dark:bg-slate-900 dark:md:bg-slate-800 w-3/5 shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[-100%] peer-checked:translate-x-0 md:w-auto md:static md:shadow-none md:translate-x-0 md:flex-row">
+                        <!--Enlaces-->
+                        <div class="px-6 pt-32 flex flex-col md:flex-row md:items-center gap-3 md:p-0">
+                            <a href="#Aboutme" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">About me</a>
+                            <a href="#Experience" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Experience</a>
+                            <a href="#Education" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Education</a>
+                            <a href="#Certifications" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Certifications</a>
+                            <a href="#Skills" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Skills</a>
+                            <a href="#Languages" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Languages</a>
+                            <a href="#Contact" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Contact</a>
+                        </div>
+
+                    <!--Boton-->
+                    <div class="block md:hidden border-t py-8 px-6 md:border-t-0 dark:border-slate-700 md:py-0 md:pr-0 md:pl-6">
+                        <a href="docs/Resume_on.pdf" class="block px-6 py-2 rounded text-center text-white text-lg font-semibold transition bg-blue-500 hover:bg-blue-600">Download CV</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Intro-->
+    <section class="w-full min-h-screen bg-gray-100 flex flex-col md:flex-row items-center justify-center text-center px-6">
+        <!-- Texto de apresentação -->
+        <div class="mb-6 md:mb-0 md:mr-12">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight break-words">
+            Hello!<br> I'm <span class="text-blue-900">Bruno Vieira</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700">
+            Data and Platform Engineer in Seville, Spain.
+          </p>
+        </div>
+      
+        <!-- Imagem no lado direito (com borda redonda) -->
+        <div class="relative w-72 h-72 md:w-96 md:h-96 flex justify-center items-center rounded-full overflow-hidden shadow-xl">
+          <img src="images/profile_foto.jpeg" alt="Bruno" class="w-full h-full object-cover">
+        </div>
+      </section>
+    
+
+    <section id="Aboutme" class="py-10 px-6 bg-white text-center max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+    <p class="text-lg text-gray-500 max-w-4xl mx-auto text-left ">
+        Born and raised in Brazil, but currently living in Spain in the beautiful and sunny city of Seville.<br><br>
+        I have always been passionate about technology and I decided to study Control, Automation and Robotics engineering to pass my days creating eletronic devices and robots 🤖. During my time at university I discovered that the world of programming and data was much cooler and dynamic, so here I am! <br><br>
+        I have been working in the data field for over 8 years and have experienced several paradigm shifts and technological advancements that this area provides: from a fully on-premises ecosystem to moving into the cloud, working with Data Warehouses, Data Lakes, Data Lakehouses, and, more recently, Data Mesh architectures. <br><br>
+        Skilled in data modeling, data integration, and architecting scalable data ecosystems on cloud platforms such as AWS and Azure. Proficient working with data lake architecture, and leveraging big data tools to handle large-scale data pipelines, having worked with the 2 biggest players in the big data world: Databricks and Snowflake, including expertise in Delta Lake and Apache Iceberg technologies.
+    </p>
+    </section>
+
+    <section class="py-10 bg-gray-100" id="Experience">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Experience</h2>
+          <div class="space-y-8">
+            <!-- Experiência 1 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/capitole_consulting_logo.jfif" alt="Logo Empresa 1" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Platform Engineer</h3>
+                <p class="text-gray-600">MAPFRE</p>
+                <p class="text-sm text-gray-500">Feb 2024 - Present</p>
+                <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
+                  <li>Act as the primary point of contact for MAPFRE Brazil on the global data
+                    reference architecture.</li>
+                  <li>Evaluate, analyze, and validate new data projects and Cloud components </li>
+                  <li>Provide expert advice on best practices, address queries, and guide development efforts.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experiência 1.5 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="images/capitole_consulting_logo.jfif" alt="Logo Empresa 2" class="w-16 h-16 object-contain">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Senior Data Engineer</h3>
+                  <p class="text-gray-600">ManoMano</p>
+                <p class="text-sm text-gray-500">Oct 2022 - Feb 2024</p>
+                <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
+                    <li>Development of data pipelines for analytical purposes and also for integration between
+                        systems regarding sellers and traffic data.</li>
+                    <li>Development using: AWS and Google Cloud as clouds, Airflow as an orchestration tool and Snowflake as an analytical, data processing and storage solution. </li>
+                    <li>Work with Git, CI/CD, and version control to maintain code and documentation</li>
+                    <li>Work with diverse data sources with special attention to Google Analytics data (version 3 and 4) focusing on the optimization of large volumes of data in the order of terabytes per month.</li>
+                  </ul>
+                </div>
+              </div>
+      
+            <!-- Experiência 2 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/ztech_logo.jfif" alt="Logo Empresa 2" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Senior Data Engineer</h3>
+                <p class="text-gray-600">Z-Tech</p>
+                <p class="text-sm text-gray-500">Apr 2021 - Sep 2022</p>
+                <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
+                  <li>Translate business needs into quantitative queries.</li>
+                  <li>Build scalable databases using SQL and Spark in Databricks.</li>
+                  <li>Orchestration of workflows using Airflow.</li>
+                  <li>Data anonymization and cataloguing.</li>
+                  <li>Data integration with CRM platforms (Zendesk and Hubspot)</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Experiência 3 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/klabin_logo.jfif" alt="Logo Empresa 3" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Data Engineer</h3>
+                <p class="text-gray-600">Klabin</p>
+                <p class="text-sm text-gray-500">May 2020 - Apr 2021</p>
+                <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
+                  <li>Create data pipelines using Lambda, S3, Redshift, RDS, Aurora and Pentaho.</li>
+                  <li>Work with the data sources: Oracle, SQLServer and SAP BW. </li>
+                  <li> Power BI governance and infrastructure, in addition to basic training courses for the employees.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experiência 4 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="images/klabin_logo.jfif" alt="Logo Empresa 3" class="w-16 h-16 object-contain">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Data Engineer Intern</h3>
+                  <p class="text-gray-600">Klabin</p>
+                  <p class="text-sm text-gray-500">Aug 2018 - May 2020</p>
+                  <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
+                    <li>Create data pipelines using Integration Services (SSIS) and Kettle (Pentaho).</li>
+                    <li>Work with the data sources: SQL Server, My SQL, SAP BW, SAP ECC, OSI PI, S3 and REDHIFT. </li>
+                    <li>Configuration ad deployment of Spotfire and TDV Servers.</li>
+                    <li>Development of analyzes using Spotfire and Power BI BI tools.</li>
+                  </ul>
+                </div>
+              </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="py-10" id="Education">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Education</h2>
+          <div class="space-y-8">
+            <!-- Experiência 1 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/ufabc_logo.jfif" alt="Logo Empresa 1" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Instrumentation, Automation and Robotics Engineer</h3>
+                <p class="text-gray-600">UFABC - Federal university of ABC</p>
+                <p class="text-sm text-gray-500">2011 - 2019</p>
+              </div>
+            </div>
+      
+            <!-- Experiência 2 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/ufabc_logo.jfif" alt="Logo Empresa 2" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Bachelor in Science and Technology</h3>
+                <p class="text-gray-600">UFABC - Federal university of ABC</p>
+                <p class="text-sm text-gray-500">2021 - 2017</p>
+              </div>
+            </div>
+      
+            <!-- Experiência 3 -->
+            <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+              <img src="images/etevav_logo.jfif" alt="Logo Empresa 3" class="w-16 h-16 object-contain">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">Technician in Environmental Science</h3>
+                <p class="text-gray-600">ETEC - Vasco Antônio Venchiarutti</p>
+                <p class="text-sm text-gray-500">2008 - 2009</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-gray-100" id="Certifications">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Certifications</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Certificação 1 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <img src="images/aws_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+              <div>
+                <a href="https://www.credly.com/badges/03a87df5-6b1f-4439-b22d-f34107b12c09/public_url" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    AWS Certified Cloud Practitioner
+                  </a>
+                <p class="text-gray-600">Amazon Web Services (AWS)</p>
+                <p class="text-sm text-gray-500">issued Aug 2024</p>
+              </div>
+            </div>
+      
+            <!-- Certificação 2 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="images/microsoft_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+                <div>
+                  <a href="https://learn.microsoft.com/en-us/users/brunoreis-0903/credentials/45d02781f94ac5d9?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    Azure Fundamentals
+                    </a>
+                  <p class="text-gray-600">Microsoft</p>
+                  <p class="text-sm text-gray-500">issued Aug 2022</p>
+                </div>
+              </div>
+      
+            <!-- Certificação 3 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="images/microsoft_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+                <div>
+                  <a href="https://learn.microsoft.com/en-us/users/brunoreis-0903/credentials/c11985571aca8813?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    Azure Data Engineer Associate
+                    </a>
+                  <p class="text-gray-600">Microsoft</p>
+                  <p class="text-sm text-gray-500">issued May 2023</p>
+                </div>
+              </div>
+
+            <!-- Certificação 4 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="images/astronomer_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+                <div>
+                  <a href="https://www.credly.com/badges/4e71c29f-fbd3-4df0-9d81-0633829a075c?source=linked_in_profile" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    Apache Airflow Fundamentals
+                    </a>
+                  <p class="text-gray-600">Astronomer</p>
+                  <p class="text-sm text-gray-500">issued Feb 2022</p>
+                </div>
+              </div>
+
+            <!-- Certificação 5 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="images/astronomer_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+                <div>
+                  <a href="https://www.credly.com/badges/4e71c29f-fbd3-4df0-9d81-0633829a075c?source=linked_in_profile" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    DAG Authoring for Apache Airflow
+                    </a>
+                  <p class="text-gray-600">Astronomer</p>
+                  <p class="text-sm text-gray-500">issued Nov 2023</p>
+                </div>
+              </div>
+
+            <!-- Certificação 6 -->
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="images/snowflake_logo.jfif" alt="Certificação 1" class="w-14 h-14 object-contain mr-4">
+                <div>
+                  <a href="https://achieve.snowflake.com/b3fdbe52-85d9-4823-b178-f50910186f09#acc.iBJSO89m" target="_blank" class="text-lg font-semibold text-blue-600 hover:underline">
+                    SnowPro Core Certification
+                    </a>
+                  <p class="text-gray-600">Snowflake</p>
+                  <p class="text-sm text-gray-500">issued Dec 2024</p>
+                </div>
+              </div>
+      
+          </div>
+        </div>
+    </section>
+      
+    <!-- Skills-->
+    <section id="Skills" class="py-10 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Skills and Technologies</h2>
+      
+        <!-- Cloud Services-->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('cloud')">
+            Cloud Services
+            <span id="icon-cloud">➖</span>
+          </button>
+          <div id="cloud" class="mt-2 grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center p-2">
+              <img src="images/aws_dms.png" class="w-12 h-12 object-contain">
+              <p class="text-sm">AWS Database Migration Service</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+              <img src="images/aws_emr.png" class="w-12 h-12 object-contain">
+              <p class="text-sm">AWS EMR Serveless</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/aws_glue.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">AWS Glue Data Catalog</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/aws_lambda.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">AWS Lambda</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/aws_athenapng.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">AWS Athena</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/aws_stepfunction.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">AWS Step Functions</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- bigdata -->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('bigdata')">
+            Big Data and Processing
+            <span id="icon-bigdata">➕</span>
+          </button>
+          <div id="bigdata" class="hidden mt-2 grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center p-2">
+              <img src="images/databricks.jpg" class="w-12 h-12 object-contain">
+              <p class="text-sm">Databricks</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+              <img src="images/spark.png" class="w-12 h-12 object-contain">
+              <p class="text-sm">Apache Spark</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- storage -->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('storage')">
+            Data Storage
+            <span id="icon-storage">➕</span>
+          </button>
+          <div id="storage" class="hidden mt-2 grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center p-2">
+              <img src="images/snowflake_logo.jfif" class="w-12 h-12 object-contain">
+              <p class="text-sm">Snowflake</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/oracle.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">Oracle</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/Mongodb.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">MongoDB</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/mysqlpng.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">MySQL</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/sqlserver.svg" class="w-12 h-12 object-contain">
+                <p class="text-sm">SQL Server</p>
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <img src="images/dynamo.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">DynamoDB</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automation -->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('automation')">
+                Orchestration and Automation
+              <span id="icon-automation">➕</span>
+            </button>
+            <div id="automation" class="hidden mt-2 grid grid-cols-3 gap-4">
+              <div class="flex flex-col items-center p-2">
+                <img src="images/airflow.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">Airflow</p>
+              </div>
+              <div class="flex flex-col items-center p-2">
+                <img src="images/jenkins.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">Jenkins</p>
+              </div>
+              <div class="flex flex-col items-center p-2">
+                <img src="images/terraform.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">terraform</p>
+              </div>
+            </div>
+          </div>
+
+        <!-- tables -->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('tables')">
+                Table formats
+              <span id="icon-tables">➕</span>
+            </button>
+            <div id="tables" class="hidden mt-2 grid grid-cols-3 gap-4">
+              <div class="flex flex-col items-center p-2">
+                <img src="images/iceberg.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">Apache Iceberg</p>
+              </div>
+              <div class="flex flex-col items-center p-2">
+                <img src="images/deltalake.jpg" class="w-12 h-12 object-contain">
+                <p class="text-sm">Delta lake</p>
+              </div>
+            </div>
+          </div>  
+        <!-- Monitor -->
+        <div class="bg-white p-4 rounded-lg shadow mb-4">
+            <button class="flex justify-between items-center w-full text-lg font-semibold text-left" onclick="toggleAccordion('monitor')">
+                Monitoring and Observability
+              <span id="icon-monitor">➕</span>
+            </button>
+            <div id="monitor" class="hidden mt-2 grid grid-cols-3 gap-4">
+              <div class="flex flex-col items-center p-2">
+                <img src="images/opensearchpng.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">OpenSearch</p>
+              </div>
+              <div class="flex flex-col items-center p-2">
+                <img src="images/datadog.png" class="w-12 h-12 object-contain">
+                <p class="text-sm">Datadog</p>
+              </div>
+            </div>
+          </div>
+      
+    </section>
+
+    <!-- Language-->
+    <section id="Languages" class="py-10 px-4 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Languages</h2>
+    
+    <div class="max-w-sm mx-auto">
+        <!-- Idioma 1: Espanhol -->
+        <div>
+        <h3 class="text-xl font-semibold text-gray-800">Portuguese</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+            <div class="bg-blue-900 h-2.5 rounded-full" style="width: 100%"></div> <!-- C1 -->
+        </div>
+        <p class="text-sm text-gray-500">Level: Native</p>
+        </div>
+    
+        <!-- Idioma 2: Inglês -->
+        <div>
+        <h3 class="text-xl font-semibold text-gray-800">English</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+            <div class="bg-blue-800  h-2.5 rounded-full" style="width: 80%"></div> <!-- B2 -->
+        </div>
+        <p class="text-sm text-gray-500">Level: C1 (Advanced)</p>
+        </div>
+    
+        <!-- Idioma 3: Alemão -->
+        <div>
+        <h3 class="text-xl font-semibold text-gray-800">Spanish</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+            <div class="bg-blue-800 h-2.5 rounded-full" style="width: 80%"></div> <!-- B1 -->
+        </div>
+        <p class="text-sm text-gray-500">Level: C1 (Advanced)</p>
+        </div>
+    
+        <!-- Idioma 4: Francês -->
+        <div>
+        <h3 class="text-xl font-semibold text-gray-800">German</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div> <!-- A2 -->
+        </div>
+        <p class="text-sm text-gray-500">Level: A2 (Basic)</p>
+        </div>
+
+        <!-- Idioma 3: Alemão -->
+        <div>
+        <h3 class="text-xl font-semibold text-gray-800">Japanese</h3>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 20%"></div> <!-- B1 -->
+        </div>
+        <p class="text-sm text-gray-500">Level: A1 (Basic)</p>
+        </div>
+    </div>
+    
+    </section>
+
+    <!-- Download CV-->
+    <section class="py-10 px-4 flex flex-col items-center min-h-[75vh] relative">
+        <!-- Título fixado no topo -->
+        <h2 class="text-3xl font-bold text-gray-900 absolute top-10">Download CV</h2> 
+    
+        <!-- Botão centralizado no meio da seção -->
+        <div class="flex justify-center items-center flex-grow">
+            <a href="docs/Resume_on.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="Contact" class="w-full min-h-screen bg-gray-100 flex flex-col items-center justify-center px-6 py-10">
+        <h2 class="text-4xl md:text-3xl font-bold text-gray-900 mb-4 text-center">Get in Touch</h2>
+        <p class="text-lg text-gray-600 mb-8 text-center">Feel free to reach out. Let’s connect!</p>
+      
+        <!-- Formulário com Formspree -->
+        <form action="https://formspree.io/f/xyzkqvev" method="POST" class="w-full max-w-md bg-gray-100 p-6 md:p-8 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2">Name</label>
+            <input type="text" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="John Doe" required>
+          </div>
+      
+          <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2">Email</label>
+            <input type="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="johndoe@example.com" required>
+          </div>
+      
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2">Message</label>
+            <textarea name="message" class="w-full p-3 border border-gray-300 rounded-md h-28 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Write your message here..." required></textarea>
+          </div>
+      
+          <button type="submit" class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition">
+            Send Message
+          </button>
+        </form>
+      
+        <!-- Redes sociais (estilo discreto) -->
+        <div class="mt-6 flex space-x-5">
+          <a href="https://www.linkedin.com/in/bruno-vieira-72397b41/" target="_blank" class="text-gray-600 hover:text-blue-700 text-2xl">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/BrunoKings0" target="_blank" class="text-gray-600 hover:text-gray-900 text-2xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:brunoreis02@hotmail.com" class="text-gray-600 hover:text-gray-900 text-2xl">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-lg font-semibold">Bruno Vieira</h2>
+            <p class="text-sm text-gray-400">Engenheiro de Dados | Consultor</p>
+            
+            <p class="text-xs text-gray-500 mt-4">© 2025 Bruno Vieira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+      <script>
+        function toggleAccordion(id) {
+          const section = document.getElementById(id);
+          const icon = document.getElementById("icon-" + id);
+          if (section.classList.contains("hidden")) {
+            section.classList.remove("hidden");
+            icon.textContent = "➖"; // Ícone de menos quando aberto
+          } else {
+            section.classList.add("hidden");
+            icon.textContent = "➕"; // Ícone de mais quando fechado
+          }
+        }
+      </script>
+      
+
+</body>
+</html>
