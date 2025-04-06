@@ -59,10 +59,11 @@
         <!-- Texto de apresentação -->
         <div class="mb-6 md:mb-0 md:mr-12">
           <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight break-words">
-            Hello!<br> I'm <span class="text-blue-900">Bruno Vieira</span>
+            <!-- Hello!<br> I'm <span class="text-blue-900">Bruno Vieira</span>-->
+            Hi! I'm <span class="text-blue-900">Bruno Vieira</span>
           </h1>
           <p class="text-xl md:text-2xl text-gray-700">
-            Data and Platform Engineer in Seville, Spain.
+            Data Engineer in Seville, Spain.
           </p>
         </div>
       
@@ -73,7 +74,7 @@
       </section>
     
 
-    <section id="Aboutme" class="py-10 px-6 bg-white text-center max-w-6xl mx-auto">
+    <section id="Aboutme" class="min-h-screen py-10 px-6 bg-white text-center max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
     <p class="text-lg text-gray-500 max-w-4xl mx-auto text-left ">
         Born and raised in Brazil, but currently living in Spain in the beautiful and sunny city of Seville.<br><br>
@@ -83,7 +84,7 @@
     </p>
     </section>
 
-    <section class="py-10 bg-gray-100" id="Experience">
+    <section class="min-h-screen py-10 bg-gray-100" id="Experience">
         <div class="max-w-6xl mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Experience</h2>
           <div class="space-y-8">
@@ -91,14 +92,19 @@
             <div class="flex items-start space-x-6 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
               <img src="images/capitole_consulting_logo.jfif" alt="Logo Empresa 1" class="w-16 h-16 object-contain">
               <div>
-                <h3 class="text-xl font-semibold text-gray-800">Platform Engineer</h3>
+                <h3 class="text-xl font-semibold text-gray-800">Cloud Solutions Engineer</h3>
                 <p class="text-gray-600">MAPFRE</p>
                 <p class="text-sm text-gray-500">Feb 2024 - Present</p>
+                <p class=" mt-2 text-gray-700">MAPFRE is a Global insurance company based in Spain, operating in over 40 countries. It offers a wide range of insurance products, including auto, home, health, and business insurance. I was part of the global architecture team, responsible for deploying architecture solutions across various countries to ensure consistent and scalable operations.</p>
                 <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
-                  <li>Act as the primary point of contact for MAPFRE Brazil on the global data
+                  <li>Act as the primary point of contact for MAPFRE Brazil and MAPFRE Peru on the global data
                     reference architecture.</li>
-                  <li>Evaluate, analyze, and validate new data projects and Cloud components </li>
-                  <li>Provide expert advice on best practices, address queries, and guide development efforts.</li>
+                  <li>Evaluate, analyze, and validate new data projects and Cloud components in AWS cloud</li>
+                  <li>Provide expert advice on best practices, address queries, and guide development efforts for data engineering pipelines.</li>
+                  <li>Orcle On-premises migration to the cloud with CDC (DMS).</li>
+                  <li>Ensured data access governance by evaluating use cases and configuring group-based permissions (Lakeformation and Snowflake)</li>
+                  <li>Performed data anonymization and de-anonymization at scale to support privacy compliance and analytical use cases.</li>
+                  <li>Worked with CI/CD pipelines to execute and monitor deployment processes, identifying issues and implementing improvements to ensure stability and efficiency(Jenkins, Terraform, CodeBuild, CodePipeline, Bitbucket and etc.)</li>            
                 </ul>
               </div>
             </div>
@@ -110,12 +116,15 @@
                   <h3 class="text-xl font-semibold text-gray-800">Senior Data Engineer</h3>
                   <p class="text-gray-600">ManoMano</p>
                 <p class="text-sm text-gray-500">Oct 2022 - Feb 2024</p>
+                <p class=" mt-2 text-gray-700">ManoMano is a european online marketplace leader specializing in DIY, home and garden. Focused on data mesh architecture, I contributed to the Sellers domain and later transitioned to the Visitors domain.
+                </p>
+
                 <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
-                    <li>Development of data pipelines for analytical purposes and also for integration between
-                        systems regarding sellers and traffic data.</li>
-                    <li>Development using: AWS and Google Cloud as clouds, Airflow as an orchestration tool and Snowflake as an analytical, data processing and storage solution. </li>
-                    <li>Work with Git, CI/CD, and version control to maintain code and documentation</li>
+                    <li>Development of robust data pipelines for analytical purposes and seamless integration between systems using technologies such as Airflow, Snowflake, AWS, Google Cloud and Python.</li>
                     <li>Work with diverse data sources with special attention to Google Analytics data (version 3 and 4) focusing on the optimization of large volumes of data in the order of terabytes per month.</li>
+                    <li>Worked on data cataloging and tracking, ensuring data lineage by documenting the origin and transformations of datasets across various systems and tables.</li>
+                    <li>Deployed and managed Snowflake resources using Terraform.</li>
+                    <li>Work with Git, CI/CD, and version control to maintain code.</li>
                   </ul>
                 </div>
               </div>
@@ -127,6 +136,8 @@
                 <h3 class="text-xl font-semibold text-gray-800">Senior Data Engineer</h3>
                 <p class="text-gray-600">Z-Tech</p>
                 <p class="text-sm text-gray-500">Apr 2021 - Sep 2022</p>
+                <p class=" mt-2 text-gray-700">Z-Tech is an innovation group within Anheuser-Busch dedicated to fostering the growth of small and medium-sized businesses through technology. I worked in Z-Tech's data team, initially focusing on data from Beesbank, a Brazilian fintech, and later on data from Sihay, a Mexican fintech, both of which were part of Z-Tech. 
+                </p>
                 <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
                   <li>Translate business needs into quantitative queries.</li>
                   <li>Build scalable databases using SQL and Spark in Databricks.</li>
@@ -144,6 +155,8 @@
                 <h3 class="text-xl font-semibold text-gray-800">Data Engineer</h3>
                 <p class="text-gray-600">Klabin</p>
                 <p class="text-sm text-gray-500">May 2020 - Apr 2021</p>
+                <p class=" mt-2 text-gray-700">Klabin is a leading producer and exporter of paper in Brazil. I was a member of the central data team, responsible for gathering and analyzing data from across the entire company.
+                </p>
                 <ul class="mt-2 text-gray-700 space-y-0 list-disc list-inside">
                   <li>Create data pipelines using Lambda, S3, Redshift, RDS, Aurora and Pentaho.</li>
                   <li>Work with the data sources: Oracle, SQLServer and SAP BW. </li>
@@ -172,7 +185,7 @@
         </div>
     </section>
 
-    <section class="py-10" id="Education">
+    <section class="py-10 min-h-screen" id="Education">
         <div class="max-w-6xl mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Education</h2>
           <div class="space-y-8">
@@ -209,7 +222,7 @@
         </div>
     </section>
 
-    <section class="py-10 bg-gray-100" id="Certifications">
+    <section class="min-h-screen py-10 bg-gray-100" id="Certifications">
         <div class="max-w-6xl mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Certifications</h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -291,7 +304,7 @@
     </section>
       
     <!-- Skills-->
-    <section id="Skills" class="py-10 max-w-4xl mx-auto">
+    <section id="Skills" class="min-h-screen py-10 max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Skills and Technologies</h2>
       
         <!-- Cloud Services-->
@@ -441,7 +454,7 @@
 
     <!-- Language-->
     <section id="Languages" class="py-10 px-4 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Languages</h2>
+    <h2 class="min-h-screen text-3xl font-bold text-center text-gray-900 mb-6">Languages</h2>
     
     <div class="max-w-sm mx-auto">
         <!-- Idioma 1: Espanhol -->
@@ -548,9 +561,9 @@
     <footer class="bg-gray-900 text-white py-6">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-lg font-semibold">Bruno Vieira</h2>
-            <p class="text-sm text-gray-400">Engenheiro de Dados | Consultor</p>
+            <p class="text-sm text-gray-400">Data Engineer</p>
             
-            <p class="text-xs text-gray-500 mt-4">© 2025 Bruno Vieira. Todos os direitos reservados.</p>
+            <p class="text-xs text-gray-500 mt-4">© 2025 Bruno Vieira. All rights reserved.</p>
         </div>
     </footer>
 
