@@ -11,7 +11,7 @@
 <body class="bg-white text-slate-800">
 
     <!--Menu-->
-    <nav class="z-20 bg-gray-100 fixed md:static w-full md:w-auto border-b md:border-none shadow-lg md:shadow-none">
+    <nav class="z-20 bg-gray-100 fixed lg:static w-full lg:w-auto border-b lg:border-none shadow-lg lg:shadow-none">
         <div class="p-6 container mx-auto">
             <div class="flex items-center justify-between">
                 <!--Logo-->
@@ -25,15 +25,15 @@
                     <!--botão responsive-->
                     <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
 
-                    <label for="hamburger" class="peer-checked:hamburger block z-20 cursor-pointer md:hidden transition p-5 hover:bg-gray-200 rounded">
+                    <label for="hamburger" class="peer-checked:hamburger block z-20 cursor-pointer lg:hidden transition p-5 hover:bg-gray-200 rounded">
                         <div class="h-0.5 w-6 bg-black transition"></div>
                         <div class="mt-2 h-0.5 w-6 bg-black transition"></div>
                     </label>
 
                     <!--Corpo dos enlaces-->
-                    <div class="bg-gray-100 w-3/5 shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[-100%] peer-checked:translate-x-0 md:w-auto md:static md:shadow-none md:translate-x-0 md:flex-row">
+                    <div class="bg-gray-100 w-3/5 shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[-100%] peer-checked:translate-x-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0 lg:flex-row">
                         <!--Enlaces-->
-                        <div class="px-6 pt-32 flex flex-col md:flex-row md:items-center gap-3 md:p-0">
+                        <div class="px-6 pt-32 flex flex-col lg:flex-row lg:items-center gap-3 lg:p-0">
                             <a href="#Aboutme" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">About me</a>
                             <a href="#Experience" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Experience</a>
                             <a href="#Education" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Education</a>
@@ -41,10 +41,11 @@
                             <a href="#Skills" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Skills</a>
                             <a href="#Languages" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Languages</a>
                             <a href="#Contact" class="tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Contact</a>
+                            <a href="docs/Resume_on.pdf" class="hidden lg:block tracking-wide cursos-pointer px-3 py-2 rounded font-semibold text-lg transition hover:text-white hover:bg-blue-900">Download CV</a>
                         </div>
 
                     <!--Boton-->
-                    <div class="block md:hidden border-t py-8 px-6 md:border-t-0 md:py-0 md:pr-0 md:pl-6">
+                    <div class="block lg:hidden border-t py-8 px-6 lg:border-t-0 lg:py-0 lg:pr-0 lg:pl-6">
                         <a href="docs/Resume_on.pdf" class="block px-6 py-2 rounded text-center text-white text-lg font-semibold transition bg-blue-500 hover:bg-blue-600">Download CV</a>
                     </div>
                     </div>
@@ -101,7 +102,7 @@
                     reference architecture.</li>
                   <li>Evaluate, analyze, and validate new data projects and Cloud components in AWS cloud</li>
                   <li>Provide expert advice on best practices, address queries, and guide development efforts for data engineering pipelines.</li>
-                  <li>Orcle On-premises migration to the cloud with CDC (DMS).</li>
+                  <li>Oracle On-premises migration to the cloud with CDC (DMS).</li>
                   <li>Ensured data access governance by evaluating use cases and configuring group-based permissions (Lakeformation and Snowflake)</li>
                   <li>Performed data anonymization and de-anonymization at scale to support privacy compliance and analytical use cases.</li>
                   <li>Worked with CI/CD pipelines to execute and monitor deployment processes, identifying issues and implementing improvements to ensure stability and efficiency(Jenkins, Terraform, CodeBuild, CodePipeline, Bitbucket and etc.)</li>            
@@ -453,10 +454,10 @@
     </section>
 
     <!-- Language-->
-    <section id="Languages" class="py-10 px-4 bg-gray-100">
-    <h2 class="min-h-screen text-3xl font-bold text-center text-gray-900 mb-6">Languages</h2>
+    <section id="Languages" class="py-10 px-4 bg-gray-100  min-h-screen">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Languages</h2>
     
-    <div class="max-w-sm mx-auto">
+    <div class="max-w-sm mx-auto space-y-6">
         <!-- Idioma 1: Espanhol -->
         <div>
         <h3 class="text-xl font-semibold text-gray-800">Portuguese</h3>
@@ -505,21 +506,8 @@
     
     </section>
 
-    <!-- Download CV-->
-    <section class="py-10 px-4 flex flex-col items-center min-h-[75vh] relative">
-        <!-- Título fixado no topo -->
-        <h2 class="text-3xl font-bold text-gray-900 absolute top-10">Download CV</h2> 
-    
-        <!-- Botão centralizado no meio da seção -->
-        <div class="flex justify-center items-center flex-grow">
-            <a href="docs/Resume_on.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
-                Download Resume
-            </a>
-        </div>
-    </section>
-
-    <section id="Contact" class="w-full min-h-screen bg-gray-100 flex flex-col items-center justify-center px-6 py-10">
-        <h2 class="text-4xl md:text-3xl font-bold text-gray-900 mb-4 text-center">Get in Touch</h2>
+    <section id="Contact" class="w-full min-h-screen flex flex-col items-center justify-center px-4 py-10">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Contact</h2>
         <p class="text-lg text-gray-600 mb-8 text-center">Feel free to reach out. Let’s connect!</p>
       
         <!-- Formulário com Formspree -->
